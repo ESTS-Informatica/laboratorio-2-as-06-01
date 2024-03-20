@@ -40,10 +40,10 @@ public class CompanyTest
     public void setUp()
     {
       
-     client1 = new User("José Manuel" + "911111111" + "zemanel@yahoo.com" + "\n");
-     client2 = new User("António Francisco" + "922222222" + "tochicol@hotmail.com" + "\n");
-     seller1 = new User("Fernando Fernandes" + "966777101" + "fefe@remax.pt" + "\n");
-     seller2 = new User("Fernando Fernandes" + "966777152" + "roro@remax.pt" + "\n");
+     client1 = new User("José Manuel","911111111", "zemanel@yahoo.com");
+     client2 = new User("António Francisco", "922222222", "tochicol@hotmail.com");
+     seller1 = new User("Fernando Fernandes", "966777101" , "fefe@remax.pt");
+     seller2 = new User("Fernando Fernandes" , "966777152", "roro@remax.pt");
     }
 
     /**
