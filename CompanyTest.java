@@ -25,8 +25,11 @@ public class CompanyTest
     @Test
     public void testSimpleConstructor(){
      company = new Company();
-     company.registerClient(new User());
-     company.registerSellers(new User());
+      assertTrue(company.registerClient(client1));
+        assertTrue(company.registerClient(client2));
+        assertTrue(company.registerSeller(seller1));
+        assertTrue(company.registerSeller(seller2));
+    
     }
     /**
      * Sets up the test fixture.
@@ -36,7 +39,7 @@ public class CompanyTest
     @BeforeEach
     public void setUp()
     {
-        company= new Company();
+      
      client1 = new User("José Manuel" + "911111111" + "zemanel@yahoo.com" + "\n");
      client2 = new User("António Francisco" + "922222222" + "tochicol@hotmail.com" + "\n");
      seller1 = new User("Fernando Fernandes" + "966777101" + "fefe@remax.pt" + "\n");

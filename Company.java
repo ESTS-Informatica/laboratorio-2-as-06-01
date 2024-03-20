@@ -106,6 +106,7 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerSell(Sell sell) {
+         if(sell!=null || !sells.contains(sell)){}
         return true;         // dummy implementation
     }
 
